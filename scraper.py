@@ -5,7 +5,7 @@ import requests
 
 MAIN_URL = "https://www.cityplumbing.co.uk"
 
-class TravisPetkinsScraper():
+class CityPlumbingScraper():
     def __init__(self):
         self.categories = dict()
         self.products = dict()
@@ -186,7 +186,7 @@ class TravisPetkinsScraper():
         self.browser.close()
 
 def main():
-    scraper = TravisPetkinsScraper()
+    scraper = CityPlumbingScraper()
     scraper.start()
 
 if __name__ == "__main__":
